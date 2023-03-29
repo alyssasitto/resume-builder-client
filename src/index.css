@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+	--white: #fff;
+	--purple-blue: #440ccc;
+	--light-purple: #c7b6f0;
+	--black-grey: #343a40;
+	--light-grey: rgba(168, 189, 233, 0.12);
+	--black: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Roboto Slab", serif;
+	color: var(--black-grey);
+	background-color: var(--very-light-bg);
+}
+
+body.fixed {
+	position: fixed;
+	/* max-height: 100vh; */
+	overflow-y: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+button {
+	font-size: 1.6rem;
+	font-family: "Roboto Slab", serif;
+	border: none;
+	color: var(--black-grey);
+	background-color: transparent;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	line-height: 1.6;
+}
+
+.light-btn {
+	color: var(--purple-blue);
+	background-color: transparent;
+	border: 1px solid var(--purple-blue);
+}
+
+.dark-btn {
+	color: var(--white);
+	background-color: var(--purple-blue);
+}
+
+.padding-helper {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 }

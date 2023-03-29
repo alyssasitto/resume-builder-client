@@ -27,7 +27,7 @@ const Login = () => {
 	};
 
 	return (
-		<form>
+		<form onSubmit={login}>
 			<h1>Login</h1>
 			<div>
 				<label htmlFor="email">Email</label>
@@ -47,9 +47,7 @@ const Login = () => {
 				/>
 			</div>
 
-			<button onClick={() => login()} type="submit">
-				Login
-			</button>
+			<button type="submit">Login</button>
 		</form>
 	);
 };

@@ -1,0 +1,17 @@
+.banner {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	padding: 2.5rem;
+	background-color: var(--light-grey);
+	margin-bottom: 10rem;
+}
+
+.banner img {
+	width: 4rem;
+}
+
+.banner h3 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}

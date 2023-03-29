@@ -1,0 +1,24 @@
+.carousel h2 {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-weight: 900;
+}
+
+.swiper {
+	padding: 0 0 10rem;
+	margin-bottom: 5rem;
+}
+
+.swiper-slide {
+	text-align: center;
+	background: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--purple-blue);
+}

@@ -1,0 +1,31 @@
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100vw;
+	height: 6rem;
+	background-color: var(--white);
+	z-index: 3;
+}
+
+.main-nav ul {
+	height: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 6rem;
+	background-color: var(--white);
+	left: 0;
+	right: 0;
+	transition: all 0.8s;
+	z-index: 3;
+}
+
+.main-nav ul.active {
+	height: 100vh;
+	z-index: 3;
+}
+
+.main-nav img {
+	width: 3rem;
+}
