@@ -19,6 +19,11 @@
 	right: 0;
 	transition: all 0.8s;
 	z-index: 3;
+	padding-left: 2.5rem;
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
 }
 
 .main-nav ul.active {
@@ -26,6 +31,29 @@
 	z-index: 3;
 }
 
+.main-nav ul li a,
+.main-nav ul li button {
+	font-size: 2rem;
+}
+
 .main-nav img {
 	width: 3rem;
+}
+
+@media screen and (min-width: 1000px) {
+	.main-nav {
+		position: relative;
+	}
+
+	.main-nav button {
+		display: none;
+	}
+
+	.main-nav ul {
+		height: fit-content;
+		position: relative;
+		flex-direction: row;
+		padding-top: 0;
+		top: 0;
+	}
 }

@@ -1,5 +1,6 @@
-import { useSelector } from "react-redux";
-import useScrollPosition from "../../hooks/useScrollPosition";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setModal } from "../../features/signupModalSlice";
 
 import Header from "../../components/Header/Header";
 import Carousel from "../../components/Carousel/Carousel";
@@ -13,10 +14,11 @@ require("./Home.css");
 
 const Home = () => {
 	const modalState = useSelector((state) => state.signupModal.value);
+	const dispatch = useDispatch();
 
-	const scrollPostion = useScrollPosition();
-
-	console.log(modalState);
+	useEffect(() => {
+		dispatch(setModal(false));
+	}, []);
 
 	return (
 		<div className="home">

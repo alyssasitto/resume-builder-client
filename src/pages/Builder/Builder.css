@@ -1,0 +1,10 @@
+.builder {
+	/* height: 100vh;
+	overflow: hidden; */
+	/* height: fit-content;
+	width: fit-content;
+	display: flex;
+	justify-content: center; */
+	padding-top: 10rem;
+	margin: auto;
+}

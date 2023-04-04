@@ -1,15 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
-import { useDispatch } from "react-redux";
-import { setModal } from "../../features/SignupModal";
+import { useSelector, useDispatch } from "react-redux";
+import { setModal } from "../../features/signupModalSlice";
 
 const CreateResumeBtn = () => {
-	const token = localStorage.getItem("token");
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
+	const { isLoggedIn } = useSelector((state) => state.auth);
+
 	const createResume = () => {
-		if (!token || token === "null") {
+		if (!isLoggedIn) {
 			document.body.style.height = "100vh";
 			document.body.style.overflow = "hidden";
 			dispatch(setModal(true));

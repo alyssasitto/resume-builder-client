@@ -7,11 +7,13 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
-import signupModalReducer from "./features/SignupModal";
+import signupModalReducer from "./features/signupModalSlice";
+import authReducer from "./features/authSlice";
 
 const store = configureStore({
 	reducer: {
 		signupModal: signupModalReducer,
+		auth: authReducer,
 	},
 });
 

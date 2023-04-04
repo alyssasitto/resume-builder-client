@@ -6,15 +6,39 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import Builder from "./pages/Builder/Builder";
 
+import IsPrivate from "./components/isPrivate";
+import IsAnonymous from "./components/isAnonymous";
+
 function App() {
 	return (
 		<div>
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/login" element={<Login />} />
-				<Route path="/signup" element={<Signup />} />
-				<Route path="/builder" element={<Builder />} />
+				<Route
+					path="/login"
+					element={
+						<IsAnonymous>
+							<Login />
+						</IsAnonymous>
+					}
+				/>
+				<Route
+					path="/signup"
+					element={
+						<IsAnonymous>
+							<Signup />
+						</IsAnonymous>
+					}
+				/>
+				<Route
+					path="/builder"
+					element={
+						<IsPrivate>
+							<Builder />
+						</IsPrivate>
+					}
+				/>
 			</Routes>
 		</div>
 	);

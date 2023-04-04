@@ -3,7 +3,7 @@
 :root {
 	--white: #fff;
 	--purple-blue: #440ccc;
-	--light-purple: #c7b6f0;
+	--light-purple: #460ccc3b;
 	--black-grey: #343a40;
 	--light-grey: rgba(168, 189, 233, 0.12);
 	--black: #000;
@@ -33,6 +33,7 @@ body.fixed {
 }
 
 a {
+	color: var(--black-grey);
 	text-decoration: none;
 }
 
@@ -70,4 +71,92 @@ p {
 .padding-helper {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
+}
+
+/* Universal form styles */
+
+.form {
+	padding: 1.5rem 2.5rem 0;
+	height: 100vh;
+}
+
+.form h2,
+.form h1 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 4rem;
+}
+
+.form .inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.form .input {
+	display: flex;
+	flex-direction: column;
+}
+
+.form .input div {
+	position: relative;
+}
+
+.form .input div input {
+	width: 100%;
+	padding: 1.2rem 1.2rem 1.2rem 4rem;
+	background-color: var(--light-grey);
+	border: none;
+	font-size: 1.6rem;
+}
+
+.form .input label {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.form .input div img {
+	position: absolute;
+	left: 1rem;
+	width: 2.3rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.form .btn {
+	font-size: 2rem;
+	font-weight: 900;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 3px;
+	margin-bottom: 1.5rem;
+}
+
+.form .submit-btn {
+	color: var(--white);
+	background-color: var(--purple-blue);
+}
+
+.form .demo-btn {
+	color: var(--black);
+	background-color: var(--light-purple);
+}
+
+.form .small-txt {
+	text-align: center;
+}
+
+.login-form,
+.signup-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.err {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1rem;
 }
