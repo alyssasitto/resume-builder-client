@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
+import DemoBtn from "../../components/DemoBtn/DemoBtn";
+
 import userIcon from "../../assets/svgs/user.svg";
 import mailIcon from "../../assets/svgs/envelope.svg";
 import lockIcon from "../../assets/svgs/lock.svg";
@@ -94,9 +96,7 @@ const Signup = () => {
 			<button type="submit" className="btn submit-btn">
 				Signup
 			</button>
-			<button type="button" className="btn demo-btn">
-				Demo User
-			</button>
+			<DemoBtn setLoading={setLoading} setErr={setErr} />
 
 			<p className="small-txt">
 				Already have an account? <Link to="/login">Login</Link>

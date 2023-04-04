@@ -3,11 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 
 import useScrollPosition from "../../hooks/useScrollPosition";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setModal } from "../../features/signupModalSlice";
-import { storeItems } from "../../features/authSlice";
 
 import axios from "axios";
+
+import DemoBtn from "../DemoBtn/DemoBtn";
 
 import exitIcon from "../../assets/svgs/exit.svg";
 import userIcon from "../../assets/svgs/user.svg";
@@ -123,9 +124,7 @@ const SignupModal = () => {
 				Signup
 			</button>
 
-			<button type="button" className="demo-btn btn">
-				Demo user
-			</button>
+			<DemoBtn setLoading={setLoading} setErr={setErr} />
 
 			<p className="small-txt">
 				Already have an account? <Link to="/login">Login</Link>
