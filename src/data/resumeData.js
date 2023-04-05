@@ -61,13 +61,15 @@ enhance configuration for optimal customer satisfaction.`,
 			"Software platforms",
 			"Solution mock-ups",
 		],
-		education: {
-			degree: "Ph.D",
-			start_date: "08/2008",
-			end_date: "06/2015",
-			school: "Massachusetts Institute Of Technology",
-			field_of_study: "Computer Science",
-		},
+		education: [
+			{
+				degree: "Ph.D",
+				start_date: "08/2008",
+				end_date: "06/2015",
+				school: "Massachusetts Institute Of Technology",
+				field_of_study: "Computer Science",
+			},
+		],
 	},
 
 	{
@@ -114,13 +116,28 @@ enhance configuration for optimal customer satisfaction.`,
 			"Cash register operations",
 			"Product promotions",
 		],
-		education: {
-			degree: "Bachelor's",
-			start_date: "07/2013",
-			end_date: "05/2017",
-			school: "San Francisco State University",
-			field_of_study: "Business Administration",
-		},
+		education: [
+			{
+				degree: "Bachelor's",
+				start_date: "07/2013",
+				end_date: "05/2017",
+				school: "San Francisco State University",
+				field_of_study: "Business Administration",
+			},
+			{
+				degree: "Associate",
+				start_date: "08/2012",
+				end_date: "06/2016",
+				school: "San Francisco State University",
+				field_of_study: "Business Administration",
+			},
+			{
+				degree: "High School",
+				start_date: "07/2008",
+				end_date: "06/2012",
+				school: "Meadows High",
+			},
+		],
 	},
 
 	{
@@ -168,13 +185,15 @@ enhance configuration for optimal customer satisfaction.`,
 			"Tax accounting",
 			"Expense reporting",
 		],
-		education: {
-			degree: "Bachelor's",
-			start_date: "07/2016",
-			end_date: "05/2021",
-			school: "University of Pittsburgh",
-			field_of_study: "Accounting",
-		},
+		education: [
+			{
+				degree: "Bachelor's",
+				start_date: "07/2016",
+				end_date: "05/2021",
+				school: "University of Pittsburgh",
+				field_of_study: "Accounting",
+			},
+		],
 	},
 ];
 

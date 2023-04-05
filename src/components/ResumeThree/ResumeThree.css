@@ -1,0 +1,54 @@
+.resume-three {
+	transform: translate(-50%, 220%);
+	padding: 3rem;
+}
+
+.resume-three .sections {
+	border-left: 2px solid var(--dark-purple-blue);
+}
+
+.resume-three .sections .section {
+	padding-left: 3rem;
+	position: relative;
+}
+
+.resume-three .sections .section::before {
+	content: "";
+	height: 10px;
+	width: 10px;
+	background-color: var(--white);
+	position: absolute;
+	left: 0;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	border: 1px solid var(--dark-purple-blue);
+}
+
+.resume-three h1 {
+	font-size: 5rem;
+	padding-left: 3rem;
+}
+
+.resume-three h2 {
+	margin-bottom: 1rem;
+}
+
+.resume-three h1,
+.resume-three h2 {
+	color: var(--dark-purple-blue);
+}
+
+.resume-three .contact-info {
+	display: flex;
+	gap: 2rem;
+	padding-left: 3rem;
+}
+
+.resume-three .skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.resume-three .work {
+	margin-bottom: 1rem;
+}

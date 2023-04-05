@@ -6,6 +6,7 @@
 	--light-purple: #460ccc3b;
 	--black-grey: #343a40;
 	--light-grey: rgba(168, 189, 233, 0.12);
+	--dark-purple-blue: rgb(22, 13, 61);
 	--black: #000;
 }
 
@@ -159,4 +160,37 @@ p {
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 1rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.mb-helper {
+	margin-bottom: 2rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Resume styles */
+
+.resume {
+	width: 816px;
+	height: 1056px;
+	font-size: 1.4rem;
+	box-shadow: #0000003d 0px 3px 8px;
+	position: relative;
+	transform: translateX(-50%);
+}
+
+.container {
+	scale: 0.3;
+	height: 0px;
+	width: 0px;
+}
+
+.resume h1 {
+	font-size: 4rem;
 }

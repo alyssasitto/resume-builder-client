@@ -1,0 +1,48 @@
+.resume-two {
+	transform: translate(-50%, 110%);
+}
+
+.resume-two .top-section {
+	background-color: var(--dark-purple-blue);
+	color: white;
+	padding: 3rem;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.resume-two .contact-info {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.resume-two .bottom-section {
+	padding: 0 3rem;
+}
+
+.resume-two .section-container {
+	display: grid;
+	padding: 1rem 0 2rem;
+	grid-template-columns: 0.6fr 1fr;
+}
+
+.resume-two .section-container h2 {
+	padding-right: 5rem;
+}
+
+.resume-two .skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.resume-two .work-history .work {
+	margin-bottom: 1rem;
+}
+
+.education-container {
+	margin-bottom: 1rem;
+}
+
+.border-helper {
+	border-bottom: 2px solid var(--dark-purple-blue);
+}
